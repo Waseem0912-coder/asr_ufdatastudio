@@ -43,3 +43,303 @@ Local browser URI:
 [I 2024-10-29 16:02:02.027 JupyterNotebookApp] 302 GET /tree? (@172.16.206.47) 0.45ms
 [I 2024-10-29 16:02:02.197 ServerApp] Kernel started: 4b1170e0-dc37-48b3-89f3-67b849199a8c
 [I 2024-10-29 16:02:03.111 ServerApp] Connecting to kernel 4b1170e0-dc37-48b3-89f3-67b849199a8c.
+[I 2024-10-29 16:57:14.735 ServerApp] Kernel restarted: 4b1170e0-dc37-48b3-89f3-67b849199a8c
+[I 2024-10-29 16:57:14.769 ServerApp] Starting buffering for 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
+[I 2024-10-29 16:57:14.773 ServerApp] Kernel interrupted: 4b1170e0-dc37-48b3-89f3-67b849199a8c
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site.py", line 627, in <module>
+    main()
+  File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site.py", line 614, in main
+[I 2024-10-29 16:57:14.775 ServerApp] Connecting to kernel 4b1170e0-dc37-48b3-89f3-67b849199a8c.
+[I 2024-10-29 16:57:14.775 ServerApp] Restoring connection for 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
+    known_paths = addsitepackages(known_paths)
+  File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site.py", line 397, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site.py", line 236, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site.py", line 195, in addpackage
+    exec(line)
+  File "<string>", line 1, in <module>
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+KeyboardInterrupt
+[I 2024-10-29 16:57:17.726 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2024-10-29 16:57:17.726 ServerApp] kernel 4b1170e0-dc37-48b3-89f3-67b849199a8c restarted
+[W 2024-10-29 16:57:17.734 ServerApp] Replacing stale connection: 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
+[I 2024-10-29 16:57:17.739 ServerApp] Connecting to kernel 4b1170e0-dc37-48b3-89f3-67b849199a8c.
+[W 2024-10-29 16:57:18.467 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x15477b489000>
+[W 2024-10-29 16:57:18.467 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x15477b4891b0>
+[W 2024-10-29 16:57:18.467 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x15477b4891b0>
+[W 2024-10-29 16:57:18.468 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x15477b4891b0>
+[I 2024-10-29 17:01:59.616 ServerApp] Kernel interrupted: 4b1170e0-dc37-48b3-89f3-67b849199a8c
+[E 2024-10-29 17:01:59.619 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.625 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.626 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.626 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (f4387d8efeb2465987f6448e64677c25@172.16.206.47) 8.71ms referer=None
+[E 2024-10-29 17:01:59.626 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.626 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.627 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.627 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (93a49294b0fe4155b8044e5ad77c193c@172.16.206.47) 9.60ms referer=None
+[E 2024-10-29 17:01:59.627 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.627 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.628 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.628 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (711a716a453442fd8f10e9aa88c0efe9@172.16.206.47) 10.44ms referer=None
+[E 2024-10-29 17:01:59.628 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.628 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.629 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.629 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719604 (2ea6a2357918427597c85db746620021@172.16.206.47) 11.27ms referer=None
+[E 2024-10-29 17:01:59.629 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.629 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.630 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.630 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (befccc14fdad440794405a5acee8891a@172.16.206.47) 12.28ms referer=None
+[E 2024-10-29 17:01:59.630 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.630 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.631 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.631 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (bd1d942091014255a3bd8daff1d59a0f@172.16.206.47) 13.13ms referer=None
+[E 2024-10-29 17:01:59.631 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.631 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.632 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.632 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (018b16f2ee054bbc897ba4f3bb398fdb@172.16.206.47) 13.96ms referer=None
+[E 2024-10-29 17:01:59.632 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.632 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.633 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.633 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (1018b95a505d4b3ea1143c56ef37c67c@172.16.206.47) 14.80ms referer=None
+[E 2024-10-29 17:01:59.633 ServerApp] Uncaught exception POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (172.16.206.47)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:27636', method='POST', uri='/api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605', version='HTTP/1.1', remote_ip='172.16.206.47')
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[W 2024-10-29 17:01:59.633 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 97, in post
+        await ensure_async(km.interrupt_kernel(kernel_id))  # type:ignore[func-returns-value]
+      File "/blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyter_client/multikernelmanager.py", line 395, in interrupt_kernel
+        raise RuntimeError(msg)
+    RuntimeError: Kernel is in a pending state. Cannot interrupt.
+[E 2024-10-29 17:01:59.634 ServerApp] {
+      "Host": "127.0.0.1:27636",
+      "Accept": "*/*",
+      "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+    }
+[E 2024-10-29 17:01:59.634 ServerApp] 500 POST /api/kernels/4b1170e0-dc37-48b3-89f3-67b849199a8c/interrupt?1730235719605 (12907477d6b3461a97808fd294611eaf@172.16.206.47) 15.63ms referer=None
+[I 2024-10-29 17:01:59.843 ServerApp] Kernel restarted: 4b1170e0-dc37-48b3-89f3-67b849199a8c
+[I 2024-10-29 17:01:59.844 ServerApp] Starting buffering for 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
+[I 2024-10-29 17:01:59.890 ServerApp] Connecting to kernel 4b1170e0-dc37-48b3-89f3-67b849199a8c.
+[I 2024-10-29 17:01:59.890 ServerApp] Restoring connection for 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
