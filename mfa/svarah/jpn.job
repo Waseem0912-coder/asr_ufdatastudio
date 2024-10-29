@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --account=ufdatastudios
+#SBATCH --qos=ufdatastudios
+#SBATCH --job-name=jupyter
+#SBATCH --output=jupyter_notebook.log
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks-per-socket=4
+#SBATCH --mem-per-cpu=5000mb
+#SBATCH --distribution=cyclic:cyclic
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=ahmed.waseem@ufl.edu
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:geforce:1
+#SBATCH --time=05:00:00
+date;hostname;pwd
+module load mamba cuda
+mamba activate ctc_seg
+port=$(shuf -i 20000-30000 -n 1)
+echo -e "\nStarting Jupyter Notebook on port ${port} on the $(hostname) server."
+echo -e "\nSSH tunnel command:"
+echo -e "\tssh -NL ${port}:$(hostname):${port} ${USER}@hpg.rc.ufl.edu"
+echo -e "\nLocal browser URI:"
+echo -e "\thttp://localhost:${port}"
+host=$(hostname)
+jupyter-notebook --no-browser --port=${port} --ip="$host"

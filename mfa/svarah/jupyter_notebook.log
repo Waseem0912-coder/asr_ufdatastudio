@@ -1,0 +1,53 @@
+Fri Oct 25 16:00:20 EDT 2024
+c0309a-s5.ufhpc
+/blue/ufdatastudios/ahmed.waseem/mfa/svarah
+
+Starting Jupyter Notebook on port 28472 on the c0309a-s5.ufhpc server.
+
+SSH tunnel command:
+	ssh -NL 28472:c0309a-s5.ufhpc:28472 ahmed.waseem@hpg.rc.ufl.edu
+
+Local browser URI:
+	http://localhost:28472
+[I 2024-10-25 16:00:26.333 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-10-25 16:00:26.342 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-10-25 16:00:26.346 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-10-25 16:00:26.351 ServerApp] notebook | extension was successfully linked.
+[I 2024-10-25 16:00:27.507 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-10-25 16:00:27.564 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-10-25 16:00:27.566 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-10-25 16:00:27.567 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-10-25 16:00:27.581 LabApp] JupyterLab extension loaded from /blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/lib/python3.10/site-packages/jupyterlab
+[I 2024-10-25 16:00:27.581 LabApp] JupyterLab application directory is /blue/arthur.porto-biocosmos/ahmed.waseem/.conda/envs/ctc_seg/share/jupyter/lab
+[I 2024-10-25 16:00:27.582 LabApp] Extension Manager is 'pypi'.
+[I 2024-10-25 16:00:27.594 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-10-25 16:00:27.600 ServerApp] notebook | extension was successfully loaded.
+[I 2024-10-25 16:00:27.600 ServerApp] Serving notebooks from local directory: /blue/ufdatastudios/ahmed.waseem/mfa/svarah
+[I 2024-10-25 16:00:27.601 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2024-10-25 16:00:27.601 ServerApp] http://c0309a-s5.ufhpc:28472/tree?token=c005aef76eb16cf9e23430706456105277014f6cb5093ae7
+[I 2024-10-25 16:00:27.601 ServerApp]     http://127.0.0.1:28472/tree?token=c005aef76eb16cf9e23430706456105277014f6cb5093ae7
+[I 2024-10-25 16:00:27.601 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-10-25 16:00:27.607 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/ahmed.waseem/.local/share/jupyter/runtime/jpserver-3058301-open.html
+    Or copy and paste one of these URLs:
+        http://c0309a-s5.ufhpc:28472/tree?token=c005aef76eb16cf9e23430706456105277014f6cb5093ae7
+        http://127.0.0.1:28472/tree?token=c005aef76eb16cf9e23430706456105277014f6cb5093ae7
+[I 2024-10-25 16:00:27.640 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-10-25 16:01:04.768 ServerApp] 302 GET / (@172.16.206.48) 0.44ms
+[I 2024-10-25 16:01:04.776 JupyterNotebookApp] 302 GET /tree? (@172.16.206.48) 0.48ms
+[I 2024-10-25 16:01:05.480 ServerApp] 302 GET / (@172.16.206.48) 0.37ms
+[I 2024-10-25 16:01:05.481 JupyterNotebookApp] 302 GET /tree? (@172.16.206.48) 0.41ms
+[I 2024-10-25 16:01:09.340 ServerApp] 302 GET / (@172.16.206.48) 0.40ms
+[I 2024-10-25 16:01:09.342 JupyterNotebookApp] 302 GET /tree? (@172.16.206.48) 0.40ms
+[I 2024-10-25 16:01:09.490 ServerApp] Kernel started: 01e728b2-3e58-4968-9798-c6e591c10e50
+[I 2024-10-25 16:01:10.455 ServerApp] Connecting to kernel 01e728b2-3e58-4968-9798-c6e591c10e50.
+[I 2024-10-25 16:04:42.056 ServerApp] Kernel interrupted: 01e728b2-3e58-4968-9798-c6e591c10e50
+[I 2024-10-25 16:04:57.914 ServerApp] Kernel interrupted: 01e728b2-3e58-4968-9798-c6e591c10e50
+[I 2024-10-25 16:05:13.354 ServerApp] Kernel restarted: 01e728b2-3e58-4968-9798-c6e591c10e50
+[I 2024-10-25 16:05:13.357 ServerApp] Starting buffering for 01e728b2-3e58-4968-9798-c6e591c10e50:57f447fd-c4c4-41b1-8c66-2cb8d507c2f4
+[I 2024-10-25 16:05:13.362 ServerApp] Connecting to kernel 01e728b2-3e58-4968-9798-c6e591c10e50.
+[I 2024-10-25 16:05:13.362 ServerApp] Restoring connection for 01e728b2-3e58-4968-9798-c6e591c10e50:57f447fd-c4c4-41b1-8c66-2cb8d507c2f4
+[I 2024-10-25 19:36:27.733 ServerApp] Starting buffering for 01e728b2-3e58-4968-9798-c6e591c10e50:57f447fd-c4c4-41b1-8c66-2cb8d507c2f4
+slurmstepd: error: *** JOB 48554457 ON c0309a-s5 CANCELLED AT 2024-10-25T21:00:47 DUE TO TIME LIMIT ***
