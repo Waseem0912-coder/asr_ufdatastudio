@@ -343,3 +343,6 @@ KeyboardInterrupt
 [I 2024-10-29 17:01:59.844 ServerApp] Starting buffering for 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
 [I 2024-10-29 17:01:59.890 ServerApp] Connecting to kernel 4b1170e0-dc37-48b3-89f3-67b849199a8c.
 [I 2024-10-29 17:01:59.890 ServerApp] Restoring connection for 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
+[I 2024-10-29 17:16:40.538 ServerApp] Kernel interrupted: 4b1170e0-dc37-48b3-89f3-67b849199a8c
+[I 2024-10-29 20:33:59.095 ServerApp] Starting buffering for 4b1170e0-dc37-48b3-89f3-67b849199a8c:7abc3723-f522-4330-a3f7-daa009eead9a
+slurmstepd: error: *** JOB 48856065 ON c39a-s35 CANCELLED AT 2024-10-29T20:55:56 DUE TO TIME LIMIT ***
